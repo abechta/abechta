@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  color: white;
+  text-align: center;
+}
+header {
+  background-color: red;
+  padding: 1%;
+}
+section {
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30vh;
+}
+aside {
+  width: 10%;
+}
+article {
+  width: 80%;
+  background-color: rgb(53, 206, 217);
+}
+.left {
+  background-color: green;
+}
+.right {
+  background-color: lightpink;
+}
+
+footer {
+  background-color: blueviolet;
+  padding: 1%;
+}
+
+@media (max-width: 992px) {
+  article {
+    width: 80%;
+    order: -1;
+  }
+  .right {
+    width: 20%;
+    order: -1;
+  }
+  .left {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    width: 100%;
+    order: -1;
+  }
+  .right {
+    width: 100%;
+    order: 2;
+  }
+  .left {
+    width: 100%;
+  }
+}
