@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.nudny-duzy-prostokat {
+  background-color: yellow;
+  width: 1000px;
+  height: 700px;
+  position: relative;
+}
+
+.nudny-maly-prostokat {
+  background-color: red;
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  left: 130px;
+  bottom: 30px;
+}
+
+.swiat-bez-kawy {
+  background-color: grey;
+  width: 500px;
+  height: 350px;
+  position: relative;
+  left: 130px;
+  bottom: 30px;
+}
+
+.zombie {
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation-name: runApokalips;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.brain {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation-name: runApokalips;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes runApokalips {
+  0% {
+    left: 70px;
+  }
+
+  25% {
+    left: 300px;
+  }
+
+  50% {
+    left: 250px;
+    top: 80px;
+  }
+
+  75% {
+    left: 80px;
+    top: 200px;
+  }
+
+  100% {
+    left: 400px;
+    top: 250px;
+  }
+}
