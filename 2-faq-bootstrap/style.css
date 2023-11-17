@@ -1,4 +1,11 @@
-bg-color {
-  background-color: antiquewhite;
-  height: 50vh;
+.bg-color {
+  background-color: rgb(227, 217, 206);
+}
+
+.custom-txt {
+  display: inline-block;
+  margin-left: 40%;
+}
+.custom-txt:hover {
+  text-decoration: underline;
 }
